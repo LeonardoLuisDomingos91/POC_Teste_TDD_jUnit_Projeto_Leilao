@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.Test"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="br.com.caelum.leilao.dominio.Leilao"/>
+    <fullyQualifiedTypeName name="br.com.caelum.leilao.dominio.Cliente"/>
+    <fullyQualifiedTypeName name="br.com.caelum.leilao.dominio.Lance"/>
+    <fullyQualifiedTypeName name="br.com.caelum.leilao.builder.CriadorDeLeilao"/>
+    <fullyQualifiedTypeName name="org.junit.Before"/>
+    <fullyQualifiedTypeName name="org.hamcrest.MatcherAssert"/>
+    <fullyQualifiedTypeName name="org.hamcrest.Matcher"/>
+</qualifiedTypeNameHistroy>

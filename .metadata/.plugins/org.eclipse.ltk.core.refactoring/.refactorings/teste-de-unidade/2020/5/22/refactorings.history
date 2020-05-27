@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;br.com.caelum.leilao.builder.CriarLeilao&apos; to &apos;CriadorDeLeilao&apos;&#x0A;- Original project: &apos;teste-de-unidade&apos;&#x0A;- Original element: &apos;br.com.caelum.leilao.builder.CriarLeilao&apos;&#x0A;- Renamed element: &apos;br.com.caelum.leilao.builder.CriadorDeLeilao&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CriarLeilao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;br.com.caelum.leilao.builder{CriarLeilao.java[CriarLeilao" matchStrategy="1" name="CriadorDeLeilao" qualified="false" references="true" similarDeclarations="false" stamp="1590422839373" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,12 @@
+package br.com.caelum.leilao.teste;
+
+import org.junit.Test;
+
+public class LeilaoTeste {
+	
+	@Test
+	public void naoDeveAceitarLanceDoMesmoClienteDuasVezesSeguidas() {
+		
+	}
+
+}

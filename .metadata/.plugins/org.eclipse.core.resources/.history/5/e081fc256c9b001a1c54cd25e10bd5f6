@@ -1,0 +1,29 @@
+package br.com.caelum.leilao.teste;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import br.com.caelum.leilao.dominio.Cliente;
+import br.com.caelum.leilao.dominio.Lance;
+import br.com.caelum.leilao.dominio.Leilao;
+
+public class LeilaoTeste {
+	
+	@Test
+	public void naoDeveAceitarLanceDoMesmoClienteDuasVezesSeguidas() {
+		
+		Cliente messi = new Cliente("Messi");
+		
+		Leilao leilao = new Leilao("Bola de ouro");
+		
+		Lance lance1 = new Lance(messi,1000.0);
+		Lance lance2 = new Lance(messi,2000.0);
+		
+		leilao.propoe(lance1);
+		leilao.propoe(lance2);
+		
+		Assert.assertEquals(1, leilao.getLances().size());
+		Assert.assertEquals(1000.0,leilao.getLances().get(0).getValor(),0.00001);
+	}
+
+}

@@ -1,0 +1,81 @@
+package br.com.caelum.leilao.dominio;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class Avaliador {
+	
+	private String clienteMaiorLance;
+	private String clienteMenorLance;
+	private double maiorLance = Double.NEGATIVE_INFINITY;
+	private Double menorLance = Double.POSITIVE_INFINITY;
+	private List<Lance> maioresLances = new ArrayList<Lance>();
+	
+
+	public Double avaliaMaiorLance(Leilao leilao) {
+		
+		List<Lance> lances = leilao.getLances();
+		for(Lance l: lances) {
+			if(l.getValor() > maiorLance) {
+				maiorLance = l.getValor();
+				clienteMaiorLance = l.getCliente().getNome();
+			}	
+		}
+		
+		return maiorLance;
+	}
+	
+    public Double avaliaMenorLance(Leilao leilao) {
+		
+		List<Lance> lances = leilao.getLances();
+		for(Lance l: lances) {
+			if(l.getValor() < menorLance) {
+				menorLance = l.getValor();
+				clienteMenorLance = l.getCliente().getNome();
+			}
+		}
+		
+		return menorLance;
+	}
+    
+    public List<Lance> mostraOsTresMaioresLances(Leilao leilao){
+    	
+    	maioresLances = ordenaLista(leilao);
+    	
+       return maioresLances = maioresLances.subList(0,maioresLances.size() > 3 ? 3 : maioresLances.size());	
+    }
+    
+    public List<Lance> ordenaLista(Leilao leilao) {
+    	
+    	
+    	
+    	maioresLances = leilao.getLances();
+    	
+    	maioresLances.sort(new Comparator<Lance>() {
+
+			public int compare(Lance lance1, Lance lance2) {
+				
+				return Double.compare(lance1.getValor(), lance2.getValor());
+			}	
+    	});
+    	
+    	return maioresLances;
+    }
+    
+	public Double getMaiorlance() {
+		return maiorLance;
+	}
+
+	public Double getMenorlance() {
+		return menorLance;
+	}
+
+	public String getClienteMaiorLance() {
+		return clienteMaiorLance;
+	}
+
+	public String getClienteMenorLance() {
+		return clienteMenorLance;
+	}
+}

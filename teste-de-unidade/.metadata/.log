@@ -1,0 +1,68 @@
+!SESSION 2020-05-17 10:26:49.409 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2020-05-17 10:27:28.359
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-17 10:27:28.360
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'
+
+!ENTRY org.eclipse.ui 2 0 2020-05-17 10:27:28.765
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-17 10:27:28.765
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'
+!SESSION 2020-05-18 13:32:08.553 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 13:32:43.193
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 13:32:43.193
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 13:32:43.481
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 13:32:43.481
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'
+!SESSION 2020-05-18 17:01:47.418 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 17:02:13.486
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 17:02:13.486
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 17:02:13.808
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 17:02:13.808
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'
+!SESSION 2020-05-18 17:03:47.715 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=11.0.7
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 17:04:05.075
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 17:04:05.075
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'
+
+!ENTRY org.eclipse.ui 2 0 2020-05-18 17:04:05.389
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2020-05-18 17:04:05.389
+!MESSAGE Commands should really have a category: plug-in='org.activiti.designer.kickstart.eclipse', id='org.activiti.designer.kickstart.command.refreshCmisNavigator', categoryId='org.activiti.designer.kickstart.eclipse.categor'

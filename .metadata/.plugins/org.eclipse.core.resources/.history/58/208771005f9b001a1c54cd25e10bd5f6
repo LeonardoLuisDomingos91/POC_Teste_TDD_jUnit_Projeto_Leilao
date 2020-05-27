@@ -1,0 +1,129 @@
+package br.com.caelum.leilao.view;
+
+import static org.junit.Assert.assertEquals;
+
+import java.util.List;
+
+import org.junit.Test;
+import org.junit.platform.commons.annotation.Testable;
+
+import br.com.caelum.leilao.dominio.Avaliador;
+import br.com.caelum.leilao.dominio.Cliente;
+import br.com.caelum.leilao.dominio.Lance;
+import br.com.caelum.leilao.dominio.Leilao;
+import junit.framework.Assert;
+
+public class TesteAvaliaLeilao {
+	
+	@Test
+	public void VerificaMaiorLance() {
+		
+		Cliente leonardo = new Cliente("Leonardo");
+		Cliente leticia = new Cliente("Leticia");
+		Cliente luis = new Cliente("Luis");
+		Cliente ana = new Cliente("Ana");
+		
+		Lance lanceLeonardo = new Lance(leonardo,500.0);
+		Lance lanceLeticia = new Lance(leticia,550.0);
+		Lance lanceLuis = new Lance(luis,551.0);
+		Lance lanceAna = new Lance(ana,552.0);
+		
+		Leilao leilao = new Leilao("Televisao");
+		
+		leilao.propoe(lanceLeonardo);
+		leilao.propoe(lanceLeticia);
+		leilao.propoe(lanceLuis);
+		leilao.propoe(lanceAna);
+		
+		Avaliador avaliador = new Avaliador();
+		
+		Double maiorLance = 552.0;
+		String clienteDeMaiorLance = "Ana";
+		
+		assertEquals(clienteDeMaiorLance,ana.getNome());
+		assertEquals(maiorLance,avaliador.avaliaMaiorLance(leilao), 0.00001);	
+	}
+	
+	@Test
+	public void verificaMenorLance() {
+		
+		Cliente leonardo = new Cliente("Leonardo");
+		Cliente leticia = new Cliente("Leticia");
+		Cliente luis = new Cliente("Luis");
+		Cliente ana = new Cliente("Ana");
+		
+		Lance lanceLeonardo = new Lance(leonardo,500.0);
+		Lance lanceLeticia = new Lance(leticia,550.0);
+		Lance lanceLuis = new Lance(luis,551.0);
+		Lance lanceAna = new Lance(ana,552.0);
+		
+		Leilao leilao = new Leilao("Televisao");
+		
+		leilao.propoe(lanceLeonardo);
+		leilao.propoe(lanceLeticia);
+		leilao.propoe(lanceLuis);
+		leilao.propoe(lanceAna);
+		
+		Avaliador avaliador = new Avaliador();
+			
+		assertEquals("Leonardo",leonardo.getNome());
+		assertEquals(500.0,avaliador.avaliaMenorLance(leilao), 0.00001);
+	}
+	
+	@Test
+	public void verificaLeilaoComApenasUmLAnce() {
+		
+		Cliente leonardo = new Cliente("Leonardo");
+		
+		Lance lanceLeonardo = new Lance(leonardo,500.0);
+		
+		Leilao leilao = new Leilao("Televisao");
+		
+		leilao.propoe(lanceLeonardo);
+		
+		Avaliador avaliador = new Avaliador();
+		
+		assertEquals("Leonardo",leonardo.getNome());
+		assertEquals(500.0,avaliador.avaliaMaiorLance(leilao), 0.00001);	
+		
+		assertEquals("Leonardo",leonardo.getNome());
+		assertEquals(500.0,avaliador.avaliaMenorLance(leilao), 0.00001);
+	}
+	
+	@Test
+	public void verificaOSTresMaioresLAnce() {
+		
+		Cliente leonardo = new Cliente("Leonardo");
+		Cliente leticia = new Cliente("Leticia");
+		Cliente luis = new Cliente("Luis");
+		Cliente ana = new Cliente("Ana");
+		
+		Lance lanceLeonardo = new Lance(leonardo,500.0);
+		Lance lanceLeticia = new Lance(leticia,550.0);
+		Lance lanceLuis = new Lance(luis,551.0);
+		Lance lanceAna = new Lance(ana,552.0);
+		
+		Leilao leilao = new Leilao("Televisao");
+		
+		leilao.propoe(lanceLeonardo);
+		leilao.propoe(lanceLeticia);
+		leilao.propoe(lanceLuis);
+		leilao.propoe(lanceAna);
+		
+		Avaliador avaliador = new Avaliador();
+		
+		List<Lance> maiores = avaliador.mostraOsTresMaioresLances(leilao);
+		
+		assertEquals(3,maiores.size());	
+		
+		assertEquals("Ana",maiores.get(0).getCliente().getNome());
+		assertEquals(552.0,maiores.get(0).getValor(), 0.00001);	
+		
+		assertEquals("Luis",maiores.get(1).getCliente().getNome());
+		assertEquals(551.0,maiores.get(1).getValor(), 0.00001);	
+		
+		assertEquals("Leticia",maiores.get(2).getCliente().getNome());
+		assertEquals(550.0,maiores.get(2).getValor(), 0.00001);	
+	}
+
+}

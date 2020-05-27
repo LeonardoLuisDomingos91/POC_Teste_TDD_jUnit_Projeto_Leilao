@@ -1,0 +1,15 @@
+package br.com.caelum.leilao.teste;
+
+import org.junit.Test;
+
+import br.com.caelum.leilao.dominio.Cliente;
+
+public class LeilaoTeste {
+	
+	@Test
+	public void naoDeveAceitarLanceDoMesmoClienteDuasVezesSeguidas() {
+		
+		Cliente messi = new Cliente("Messi");
+	}
+
+}

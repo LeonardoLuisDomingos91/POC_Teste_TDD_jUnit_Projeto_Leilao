@@ -1,0 +1,20 @@
+package br.com.caelum.leilao.dominio;
+
+public class Lance {
+
+	private Cliente cliente;
+	private Double valor;
+	
+	public Lance(Cliente usuario, double valor) {
+		this.cliente = usuario;
+		this.valor = valor;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public double getValor() {
+		return valor;
+	}		
+}
